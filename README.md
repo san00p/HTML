@@ -3,132 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors Game</title>
+    <title>Sanoop Kadamboor - Resume</title>
     <style>
         body {
-            font-family: 'Arial', sans-serif;
-            text-align: center;
-            background-color: #f0f0f0;
-            margin: 0;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        h1 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        h2 {
+            color: #007acc;
+        }
+        h3 {
+            margin-top: 15px;
+        }
+        ul {
+            list-style-type: none;
             padding: 0;
         }
-
-        #game-container {
-            margin-top: 50px;
+        ul li {
+            margin-bottom: 5px;
         }
-
-        .btn {
-            font-size: 18px;
-            padding: 10px 20px;
-            margin: 10px;
-            cursor: pointer;
-            border: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+        a {
+            color: #007acc;
+            text-decoration: none;
         }
-
-        #result {
-            font-size: 24px;
-            font-weight: bold;
-            margin-top: 20px;
+        a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>Rock Paper Scissors Game</h1>
+    <header>
+        <h1>Sanoop Kadamboor</h1>
+        <p>Passionate about current, new and emerging technologies. Active contributor to the development of GTI projects.</p>
+    </header>
 
-    <div id="game-container">
-        <button class="btn" onclick="playGame('rock')">Rock</button>
-        <button class="btn" onclick="playGame('paper')">Paper</button>
-        <button class="btn" onclick="playGame('scissors')">Scissors</button>
+    <section>
+        <h2>Contact Information</h2>
+        <ul>
+            <li>Residence Address: Kannur, Kerala - 670142</li>
+            <li>Phone: +91-6364368518</li>
+            <li>Email: <a href="mailto:sanoopamazon@gmail.com">sanoopamazon@gmail.com</a></li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/sanoopapk/" target="_blank">linkedin.com/in/sanoopapk</a></li>
+        </ul>
+    </section>
 
-        <div id="result"></div>
-    </div>
+    <section>
+        <h2>Professional Experience</h2>
 
-    <script>
-        function playGame(userChoice) {
-            var choices = ['rock', 'paper', 'scissors'];
-            var computerChoice = choices[Math.floor(Math.random() * 3)];
+        <h3>Sr. Software Engineer - JTSi Technologies India Pt. Ltd (April 2022-Present)</h3>
+        <p>Client: Thomson Reuters</p>
+        <p>...</p>
 
-            var result = '';
+        <h3>Test Engineer - Tata Consultancy Services (Jan 2015-April 2022)</h3>
+        <p>Clients: Cisco, GE Healthcare, JPMC, Morgan Stanley, Nasa, Verizon</p>
+        <p>...</p>
 
-            if (userChoice === computerChoice) {
-                result = 'It\'s a tie!';
-            } else if (
-                (userChoice === 'rock' && computerChoice === 'scissors') ||
-                (userChoice === 'paper' && computerChoice === 'rock') ||
-                (userChoice === 'scissors' && computerChoice === 'paper')
-            ) {
-                result = 'You win!';
-            } else {
-                result = 'You lose!';
-            }
+        <!-- Repeat the structure for other experiences -->
 
-            document.getElementById('result').innerText = `Computer chose ${computerChoice}. ${result}`;
-        }
-    </script>
+    </section>
 
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple 3D Cube</title>
-    <script src="https://threejs.org/build/three.js"></script>
-    <style>
-        body { margin: 0; }
-    </style>
-</head>
-<body>
+    <section>
+        <h2>Skills</h2>
+        <ul>
+            <li>API Testing (6 years)</li>
+            <li>Automation testing (5 years)</li>
+            <li>Python (3 years)</li>
+            <!-- Add other skills -->
+        </ul>
+    </section>
 
-    <script>
-        // Set up scene
-        var scene = new THREE.Scene();
+    <section>
+        <h2>Tools/Applications Used</h2>
+        <ul>
+            <li>Selenium, Jira, ADO, Visual Studio, Postman, Jmetere, Protractor, SQL server, AWS, Jenkins, GIT, Eclipse, ServiceNow, Salesforce, Siebel, etc.</li>
+        </ul>
+    </section>
 
-        // Set up camera
-        var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-        camera.position.z = 5;
+    <section>
+        <h2>Certifications</h2>
+        <ul>
+            <li>WINGS: BUSINESS SKILLS_B8_Writing Business Cases & Propositions Curriculum</li>
+            <!-- Add other certifications -->
+        </ul>
+    </section>
 
-        // Set up renderer
-        var renderer = new THREE.WebGLRenderer();
-        renderer.setSize(window.innerWidth, window.innerHeight);
-        document.body.appendChild(renderer.domElement);
+    <section>
+        <h2>Education</h2>
+        <ul>
+            <li>PES College of Science B.SC Maths, Ponda Goa, Year 2008</li>
+            <!-- Add other education details -->
+        </ul>
+    </section>
 
-        // Create cube
-        var geometry = new THREE.BoxGeometry();
-        var material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-        var cube = new THREE.Mesh(geometry, material);
-        scene.add(cube);
-
-        // Render loop
-        function animate() {
-            requestAnimationFrame(animate);
-
-            // Rotate cube
-            cube.rotation.x += 0.01;
-            cube.rotation.y += 0.01;
-
-            // Render the scene
-            renderer.render(scene, camera);
-        }
-
-        // Handle window resize
-        window.addEventListener('resize', function () {
-            var newWidth = window.innerWidth;
-            var newHeight = window.innerHeight;
-
-            camera.aspect = newWidth / newHeight;
-            camera.updateProjectionMatrix();
-
-            renderer.setSize(newWidth, newHeight);
-        });
-
-        // Start the animation loop
-        animate();
-    </script>
+    <section>
+        <h2>Extra-Curricular Activities</h2>
+        <p>Certificate and Award from Baba Atomic Research Centre (BARC) Beam Technologies Current and Future Prospects.</p>
+    </section>
 
 </body>
 </html>
