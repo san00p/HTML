@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number and Rock, Paper, Scissors Games</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        #game-container {
+            margin-top: 50px;
+        }
+
+        #rps-container {
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Games Galore!</h1>
+
+    <div id="game-container">
+        <h2>Guess the Number Game</h2>
+        <p>Guess a number between 1 and 10:</p>
+        <input type="text" id="userGuess" placeholder="Enter your guess">
+        <button onclick="checkGuess()">Submit Guess</button>
+        <p id="message"></p>
+    </div>
+
+    <div id="rps-container">
+        <h2>Rock, Paper, Scissors Game</h2>
+        <p>Select your choice:</p>
+        <button onclick="playGame('rock')">Rock</button>
+        <button onclick="playGame('paper')">Paper</button>
+        <button onclick="playGame('scissors')">Scissors</button>
+        <p id="rps-message"></p>
+    </div>
+
+    <script>
+        // Guess the Number Game
+        const secretNumber = Math.floor(Math.random() * 10) + 1;
+
+        function checkGuess() {
+            const userGuess = document.getElementById('userGuess').value;
+            if (userGuess == secretNumber) {
+                showMessage('Congratulations! You guessed the correct number.');
+            } else {
+                showMessage('Sorry, try again.');
+            }
+        }
+
+        function showMessage(message) {
+            document.getElementById('message').innerText = message;
+        }
+
+        // Rock, Paper, Scissors Game
+        function playGame(userChoice) {
+            const choices = ['rock', 'paper', 'scissors'];
+            const computerChoice = choices[Math.floor(Math.random() * choices.length)];
+
+            // Determine the winner
+            let result;
+            if (userChoice === computerChoice) {
+                result = 'It\'s a tie!';
+            } else if (
+                (userChoice === 'rock' && computerChoice === 'scissors') ||
+                (userChoice === 'paper' && computerChoice === 'rock') ||
+                (userChoice === 'scissors' && computerChoice === 'paper')
+            ) {
+                result = 'You win!';
+            } else {
+                result = 'Computer wins!';
+            }
+
+            // Display the result
+            document.getElementById('rps-message').innerText = `You chose ${userChoice}. Computer chose ${computerChoice}. ${result}`;
+        }
+    </script>
+</body>
+
+</html>
