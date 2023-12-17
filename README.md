@@ -60,11 +60,38 @@
 
         <h3>Sr. Software Engineer - JTSi Technologies India Pt. Ltd (April 2022-Present)</h3>
         <p>Client: Thomson Reuters</p>
-        <p>...</p>
+        <p>Performed API Testing Manual and automation, Functional testing, Regression, Smoke Testing, Alert monitoring Automation testing,Production Support and Test in various  environments, worked with Agile methodologies, AWS, Cloud services, GIT hub</p>
 
         <h3>Test Engineer - Tata Consultancy Services (Jan 2015-April 2022)</h3>
         <p>Clients: Cisco, GE Healthcare, JPMC, Morgan Stanley, Nasa, Verizon</p>
-        <p>...</p>
+        <p>Clients: Cisco, GE Healthcare, JPMC, Morgan Stanley, Nasa, Verizon 
+
+Test Engineer (Quality Assurance)                     
+●	Performed regression testing for E2E flow of Telecom orders (Quote to Order)
+●	Performed Manual/Automation testing for functional, regression, and interface.  Attended PI planning/Scrum calls, and worked with Agile, Scrum, and DevOps methodologies with global teams. Designed, developed and executed test cases-based requirements and user stories.
+●	 Prepared test data. Developed a new test strategy and associated plan for     end-to-end   systems tests with multiple integration points. Supported the scoping and implementation of technical solutions: estimated, prioritized, and coordinated testing activities. Created detailed well-structured test plans, test cases, and test reports. Automated new test cases and integrated with Jenkins CI CD platform. 
+●	Used Git for integration with Jenkins. Tested Docker containers using K8/Kubernetes for internal web applications.
+●	 Tested microservices. Supported Layer 1 and Layer 3 provisioning for Telecom. Utilized various tools for testing, Jenkins, Selenium (Java /Python), Postman (API), etc. Created a framework for testing web applications for internal orders.
+●	Used various tools: Jira, Azure DevOps, confluence, Rally, QTest..etc.
+Role: L3 Help-desk Support (WebOps)
+●	Tested Middleware services.
+●	Log and perform troubleshooting and RCA for issues reported in Service Now, Test Load balancers, and configure update documentation.
+●	Performed routine and manual tests on routers, load balancers, and Servers.Updated technical documents and created reports.
+Role: PMO support ITIS (Banking)
+●	Supported Global Technology Infrastructure projects management and project coordination.
+●	 Supported change management operations in ITSM.
+●	 Supported Alpha and Beta testing teams… coordinate with various site engineers                  
+●	Procured networking and storage devices from Vendors, worked on access governance reports, role-based access control, access request, and recertification.
+●	Support by using Jira Clarity, Service Manager, WFM and other PM tools.
+●	 Review pending projects and coordinate with various teams and offer support
+Role: Supply Chain Executive, Procurement Support (Healthcare) 
+●	Supported Medical equipment testing, MRI, X ray, Oscilloscope etc...
+●	Produce calibration reports from vendors,Ensured only calibrated and tested equipment are used by hospitals…
+●	Coordinated with Site engineers, warehouse managers, and supported supply chain operations       
+●	Support Cisco Telepresence, Unified Communication support create network Project Quotes for deploying Cisco Telepresence / Ip phone network.
+●	Created Scope of Work (SoW), coordinated with engineers, reported t0 delivery manager.
+●	Coordinate with site engineers for deploying cisco telepresence/equipment. Performed functional testing on devices.
+</p>
 
         <!-- Repeat the structure for other experiences -->
 
