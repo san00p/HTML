@@ -1,5 +1,3 @@
-# HTML Websetup
-
 Below is the HTML code for my website:
 
 ```html
